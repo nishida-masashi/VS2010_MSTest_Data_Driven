@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9edb3789-361e-42ef-a2c6-a6d49807b7bd" name="nishida.masashi@NISHIDAMASASHI 2015-03-25 22:16:38" runUser="nishidamasashi\nishida.masashi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="既定のテストの設定" id="481f0995-1208-482a-a039-e8459acb7094">
+    <Deployment runDeploymentRoot="nishida.masashi_NISHIDAMASASHI 2015-03-25 22_16_38">
+      <DeploymentItem filename="C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-03-25T22:16:38.7400824+09:00" queuing="2015-03-25T22:16:39.6781360+09:00" start="2015-03-25T22:16:39.7381395+09:00" finish="2015-03-25T22:16:41.1532204+09:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="22" executed="22" passed="14" error="0" failed="8" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="NISHIDAMASASHI" outcome="Warning" timestamp="2015-03-25T22:16:38.8570891+09:00">
+        <Text>警告: テストの実行の配置問題です: 配置項目 'TestProject1\CSVData.csv' テスト 'TestProject1.Class1Test.NG_XML_DoubleValueTest' によって指定されています のファイルを取得できませんでした: System.IO.FileNotFoundException: ファイル 'C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\CSVData.csv' が見つかりませんでした。</Text>
+        <Exception>System.IO.FileNotFoundException: ファイル 'C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\CSVData.csv' が見つかりませんでした。
+ファイル名 'C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\CSVData.csv' です。'C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\CSVData.csv'
+   場所 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   場所 System.IO.File.GetAttributes(String path)
+   場所 Microsoft.VisualStudio.TestTools.Common.SingleFileProvider.GetFilePaths()
+   場所 Microsoft.VisualStudio.TestTools.TestManagement.DeploymentCoverageItem.GetFiles(TestRunConfiguration runConfig)
+   場所 Microsoft.VisualStudio.TestTools.TestManagement.DeploymentManager.DoDeployment(TestRun run, FileCopyService fileCopyService)</Exception>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="NG_XML_DoubleValueTest" storage="c:\users\nishida.masashi\documents\github\vs2010_mstest_data_driven\classlibrary1\testproject1\bin\debug\testproject1.dll" id="02f7e023-2b2c-5c77-62f4-81abd08f7237">
+      <Description>テストが失敗するデータを使用しています</Description>
+      <DeploymentItems>
+        <DeploymentItem filename="TestProject1\NG_CSVData.csv" />
+        <DeploymentItem filename="TestProject1\CSVData.csv" />
+        <DeploymentItem filename="TestProject1\NG_XMLData.xml" />
+      </DeploymentItems>
+      <Execution id="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" />
+      <TestMethod codeBase="C:/Users/nishida.masashi/Documents/GitHub/VS2010_MSTest_Data_Driven/ClassLibrary1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Class1Test, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NG_XML_DoubleValueTest" />
+      <DataSource connectionString="|DataDirectory|\NG_XMLData.xml" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.XML" tableName="variable_list" />
+    </UnitTest>
+    <UnitTest name="NG_CSV_DoubleValueTest" storage="c:\users\nishida.masashi\documents\github\vs2010_mstest_data_driven\classlibrary1\testproject1\bin\debug\testproject1.dll" id="7e1e0dbb-93bf-2990-e965-563b26e17a4b">
+      <Description>テストが失敗するデータを使用しています</Description>
+      <DeploymentItems>
+        <DeploymentItem filename="TestProject1\NG_CSVData.csv" />
+        <DeploymentItem filename="TestProject1\CSVData.csv" />
+      </DeploymentItems>
+      <Execution id="dbe088e8-b6c7-41c6-a6db-45b3587a8946" />
+      <TestMethod codeBase="C:/Users/nishida.masashi/Documents/GitHub/VS2010_MSTest_Data_Driven/ClassLibrary1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Class1Test, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NG_CSV_DoubleValueTest" />
+      <DataSource connectionString="|DataDirectory|\NG_CSVData.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="NG_CSVData#csv" />
+    </UnitTest>
+    <UnitTest name="OK_CSV_DoubleValueTest" storage="c:\users\nishida.masashi\documents\github\vs2010_mstest_data_driven\classlibrary1\testproject1\bin\debug\testproject1.dll" id="cd777327-69c1-a472-b173-49b58ce8b448">
+      <Description>テストが成功するデータ</Description>
+      <DeploymentItems>
+        <DeploymentItem filename="TestProject1\OK_CSVData.csv" />
+        <DeploymentItem filename="TestProject1\CSVData.csv" />
+      </DeploymentItems>
+      <Execution id="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" />
+      <TestMethod codeBase="C:/Users/nishida.masashi/Documents/GitHub/VS2010_MSTest_Data_Driven/ClassLibrary1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Class1Test, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OK_CSV_DoubleValueTest" />
+      <DataSource connectionString="|DataDirectory|\OK_CSVData.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="OK_CSVData#csv" />
+    </UnitTest>
+    <UnitTest name="OK_XML_DoubleValueTest" storage="c:\users\nishida.masashi\documents\github\vs2010_mstest_data_driven\classlibrary1\testproject1\bin\debug\testproject1.dll" id="c3a1e098-e4dc-2f26-deb5-7953d3151434">
+      <Description>テストが成功するデータ</Description>
+      <DeploymentItems>
+        <DeploymentItem filename="TestProject1\OK_XMLData.xml" />
+      </DeploymentItems>
+      <Execution id="f7cac0e0-a666-4aed-9a4f-d025294fe447" />
+      <TestMethod codeBase="C:/Users/nishida.masashi/Documents/GitHub/VS2010_MSTest_Data_Driven/ClassLibrary1/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Class1Test, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="OK_XML_DoubleValueTest" />
+      <DataSource connectionString="|DataDirectory|\OK_XMLData.xml" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.XML" tableName="variable_list" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="一覧に存在しない結果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="読み込まれたすべての結果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="7e1e0dbb-93bf-2990-e965-563b26e17a4b" executionId="dbe088e8-b6c7-41c6-a6db-45b3587a8946" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd777327-69c1-a472-b173-49b58ce8b448" executionId="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="02f7e023-2b2c-5c77-62f4-81abd08f7237" executionId="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c3a1e098-e4dc-2f26-deb5-7953d3151434" executionId="f7cac0e0-a666-4aed-9a4f-d025294fe447" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="dbe088e8-b6c7-41c6-a6db-45b3587a8946" testId="7e1e0dbb-93bf-2990-e965-563b26e17a4b" testName="NG_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.3710695" startTime="2015-03-25T22:16:39.7701413+09:00" endTime="2015-03-25T22:16:40.5841879+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbe088e8-b6c7-41c6-a6db-45b3587a8946" resultType="DataDrivenTest">
+      <Counters error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="2" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="e17e0211-3471-44a5-ba6d-378f1bbbc7a2" parentExecutionId="dbe088e8-b6c7-41c6-a6db-45b3587a8946" testId="7e1e0dbb-93bf-2990-e965-563b26e17a4b" testName="NG_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0199468" startTime="2015-03-25T22:16:40.3971772+09:00" endTime="2015-03-25T22:16:40.4211785+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbe088e8-b6c7-41c6-a6db-45b3587a8946" dataRowInfo="0" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="8610b3c9-778a-409c-9173-6b5b5a71fe44" parentExecutionId="dbe088e8-b6c7-41c6-a6db-45b3587a8946" testId="7e1e0dbb-93bf-2990-e965-563b26e17a4b" testName="NG_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0332490" startTime="2015-03-25T22:16:40.4221786+09:00" endTime="2015-03-25T22:16:40.4551805+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbe088e8-b6c7-41c6-a6db-45b3587a8946" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="a70688da-ce28-466b-a9b2-423c33f74a43" parentExecutionId="dbe088e8-b6c7-41c6-a6db-45b3587a8946" testId="7e1e0dbb-93bf-2990-e965-563b26e17a4b" testName="NG_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0480546" startTime="2015-03-25T22:16:40.4551805+09:00" endTime="2015-03-25T22:16:40.5031832+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbe088e8-b6c7-41c6-a6db-45b3587a8946" dataRowInfo="2" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>テスト メソッド TestProject1.Class1Test.NG_CSV_DoubleValueTest が例外をスローしました: 
+System.OverflowException: 算術演算の結果オーバーフローが発生しました。</Message>
+              <StackTrace>    場所 Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(Object Value)
+   場所 TestProject1.Class1Test.CSV_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 81
+   場所 TestProject1.Class1Test.NG_CSV_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 90
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="c4fca36c-de15-4673-8915-792f95608fca" parentExecutionId="dbe088e8-b6c7-41c6-a6db-45b3587a8946" testId="7e1e0dbb-93bf-2990-e965-563b26e17a4b" testName="NG_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0273460" startTime="2015-03-25T22:16:40.5031832+09:00" endTime="2015-03-25T22:16:40.5311848+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbe088e8-b6c7-41c6-a6db-45b3587a8946" dataRowInfo="3" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>テスト メソッド TestProject1.Class1Test.NG_CSV_DoubleValueTest が例外をスローしました: 
+System.OverflowException: 算術演算の結果オーバーフローが発生しました。</Message>
+              <StackTrace>    場所 ClassLibrary1.Class1.DoubleValue(Byte val) 場所 C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\Class1.vb:行 4
+   場所 TestProject1.Class1Test.CSV_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 81
+   場所 TestProject1.Class1Test.NG_CSV_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 90
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="e66c9d23-3f8d-4363-a392-8aa8b6d17f19" parentExecutionId="dbe088e8-b6c7-41c6-a6db-45b3587a8946" testId="7e1e0dbb-93bf-2990-e965-563b26e17a4b" testName="NG_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0370486" startTime="2015-03-25T22:16:40.5311848+09:00" endTime="2015-03-25T22:16:40.5681870+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbe088e8-b6c7-41c6-a6db-45b3587a8946" dataRowInfo="4" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>Assert.Fail に失敗しました。</Message>
+              <StackTrace>   場所 TestProject1.Class1Test.CSV_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 78
+   場所 TestProject1.Class1Test.NG_CSV_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 90
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+      </InnerResults>
+    </UnitTestResult>
+    <UnitTestResult executionId="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" testId="cd777327-69c1-a472-b173-49b58ce8b448" testName="OK_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.1285109" startTime="2015-03-25T22:16:40.5951885+09:00" endTime="2015-03-25T22:16:40.7591979+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" resultType="DataDrivenTest">
+      <Counters error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="4" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="425eae64-b376-4e1e-9fe1-b8ebe1da425d" parentExecutionId="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" testId="cd777327-69c1-a472-b173-49b58ce8b448" testName="OK_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0001878" startTime="2015-03-25T22:16:40.7401968+09:00" endTime="2015-03-25T22:16:40.7401968+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" dataRowInfo="0" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="5e0cb610-fe30-4243-9a4e-2c12bb2ad19a" parentExecutionId="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" testId="cd777327-69c1-a472-b173-49b58ce8b448" testName="OK_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0077146" startTime="2015-03-25T22:16:40.7401968+09:00" endTime="2015-03-25T22:16:40.7481973+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="a2cdcaca-63ac-49f3-8cb9-8c509682c996" parentExecutionId="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" testId="cd777327-69c1-a472-b173-49b58ce8b448" testName="OK_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0000290" startTime="2015-03-25T22:16:40.7481973+09:00" endTime="2015-03-25T22:16:40.7481973+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" dataRowInfo="2" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="201229eb-065f-471f-ad43-d6fc4d4c60f9" parentExecutionId="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" testId="cd777327-69c1-a472-b173-49b58ce8b448" testName="OK_CSV_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0072175" startTime="2015-03-25T22:16:40.7481973+09:00" endTime="2015-03-25T22:16:40.7551977+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2d13e89-8ce2-47cc-9e9b-969b650fd14e" dataRowInfo="3" resultType="DataDrivenDataRow" />
+      </InnerResults>
+    </UnitTestResult>
+    <UnitTestResult executionId="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" testId="02f7e023-2b2c-5c77-62f4-81abd08f7237" testName="NG_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.1875514" startTime="2015-03-25T22:16:40.7711986+09:00" endTime="2015-03-25T22:16:41.0012117+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" resultType="DataDrivenTest">
+      <Counters error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="2" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="88804269-240d-4e40-8c65-66ceba47dfe0" parentExecutionId="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" testId="02f7e023-2b2c-5c77-62f4-81abd08f7237" testName="NG_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0006818" startTime="2015-03-25T22:16:40.9242073+09:00" endTime="2015-03-25T22:16:40.9242073+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" dataRowInfo="0" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="99da53a6-ea5c-4322-8470-339192e6a5e8" parentExecutionId="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" testId="02f7e023-2b2c-5c77-62f4-81abd08f7237" testName="NG_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0106177" startTime="2015-03-25T22:16:40.9242073+09:00" endTime="2015-03-25T22:16:40.9352079+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="48d9ecba-b0ec-482a-a349-e2c03c8c287a" parentExecutionId="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" testId="02f7e023-2b2c-5c77-62f4-81abd08f7237" testName="NG_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0199571" startTime="2015-03-25T22:16:40.9352079+09:00" endTime="2015-03-25T22:16:40.9552091+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" dataRowInfo="2" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>テスト メソッド TestProject1.Class1Test.NG_XML_DoubleValueTest が例外をスローしました: 
+System.OverflowException: 算術演算の結果オーバーフローが発生しました。</Message>
+              <StackTrace>    場所 Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(String Value)
+   場所 Microsoft.VisualBasic.CompilerServices.Conversions.ToByte(Object Value)
+   場所 TestProject1.Class1Test.XML_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 128
+   場所 TestProject1.Class1Test.NG_XML_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 137
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="0825321e-9b4f-4341-8461-d4c18ebfa578" parentExecutionId="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" testId="02f7e023-2b2c-5c77-62f4-81abd08f7237" testName="NG_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0209463" startTime="2015-03-25T22:16:40.9552091+09:00" endTime="2015-03-25T22:16:40.9762103+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" dataRowInfo="3" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>テスト メソッド TestProject1.Class1Test.NG_XML_DoubleValueTest が例外をスローしました: 
+System.OverflowException: 算術演算の結果オーバーフローが発生しました。</Message>
+              <StackTrace>    場所 ClassLibrary1.Class1.DoubleValue(Byte val) 場所 C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\Class1.vb:行 4
+   場所 TestProject1.Class1Test.XML_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 128
+   場所 TestProject1.Class1Test.NG_XML_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 137
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="dc84ff6a-50e9-416a-9275-0e626551542f" parentExecutionId="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" testId="02f7e023-2b2c-5c77-62f4-81abd08f7237" testName="NG_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0203689" startTime="2015-03-25T22:16:40.9762103+09:00" endTime="2015-03-25T22:16:40.9962114+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b48114e-e893-40c7-911a-3f6d2c1bc9f8" dataRowInfo="4" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>Assert.Fail に失敗しました。</Message>
+              <StackTrace>   場所 TestProject1.Class1Test.XML_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 125
+   場所 TestProject1.Class1Test.NG_XML_DoubleValueTest() 場所 C:\Users\nishida.masashi\Documents\GitHub\VS2010_MSTest_Data_Driven\ClassLibrary1\TestProject1\Class1Test.vb:行 137
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+      </InnerResults>
+    </UnitTestResult>
+    <UnitTestResult executionId="f7cac0e0-a666-4aed-9a4f-d025294fe447" testId="c3a1e098-e4dc-2f26-deb5-7953d3151434" testName="OK_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0197192" startTime="2015-03-25T22:16:41.0182127+09:00" endTime="2015-03-25T22:16:41.0902168+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7cac0e0-a666-4aed-9a4f-d025294fe447" resultType="DataDrivenTest">
+      <Counters error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="4" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="68b07bb0-7f80-40a9-b790-43e6bcdbc2b9" parentExecutionId="f7cac0e0-a666-4aed-9a4f-d025294fe447" testId="c3a1e098-e4dc-2f26-deb5-7953d3151434" testName="OK_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0002538" startTime="2015-03-25T22:16:41.0672155+09:00" endTime="2015-03-25T22:16:41.0672155+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7cac0e0-a666-4aed-9a4f-d025294fe447" dataRowInfo="0" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="48065734-fbe4-407b-b159-b040f2878e87" parentExecutionId="f7cac0e0-a666-4aed-9a4f-d025294fe447" testId="c3a1e098-e4dc-2f26-deb5-7953d3151434" testName="OK_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0093656" startTime="2015-03-25T22:16:41.0672155+09:00" endTime="2015-03-25T22:16:41.0762160+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7cac0e0-a666-4aed-9a4f-d025294fe447" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="68b4c799-ae5b-44fd-9a16-645510b75177" parentExecutionId="f7cac0e0-a666-4aed-9a4f-d025294fe447" testId="c3a1e098-e4dc-2f26-deb5-7953d3151434" testName="OK_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0000437" startTime="2015-03-25T22:16:41.0762160+09:00" endTime="2015-03-25T22:16:41.0762160+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7cac0e0-a666-4aed-9a4f-d025294fe447" dataRowInfo="2" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="20ac4fe8-0ac8-4eff-99a3-f058e039fe3f" parentExecutionId="f7cac0e0-a666-4aed-9a4f-d025294fe447" testId="c3a1e098-e4dc-2f26-deb5-7953d3151434" testName="OK_XML_DoubleValueTest" computerName="NISHIDAMASASHI" duration="00:00:00.0088668" startTime="2015-03-25T22:16:41.0762160+09:00" endTime="2015-03-25T22:16:41.0852165+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7cac0e0-a666-4aed-9a4f-d025294fe447" dataRowInfo="3" resultType="DataDrivenDataRow" />
+      </InnerResults>
+    </UnitTestResult>
+  </Results>
+</TestRun>
