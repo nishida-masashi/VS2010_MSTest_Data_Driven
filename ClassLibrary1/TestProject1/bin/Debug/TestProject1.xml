@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TestProject1
+</name>
+</assembly>
+<members>
+<member name="P:TestProject1.Class1Test.TestContext">
+	<summary>
+現在のテストの実行についての情報および機能を
+提供するテスト コンテキストを取得または設定します。
+</summary>
+</member><member name="M:TestProject1.Class1Test.NG_DoubleValueTest">
+	<summary>
+DoubleValue のテスト
+</summary>
+</member><member name="M:TestProject1.Class1Test.OK_DoubleValueTest">
+	<summary>
+DoubleValue のテスト
+</summary>
+</member><member name="T:TestProject1.Class1Test">
+	<summary>
+Class1Test のテスト クラスです。すべての
+Class1Test 単体テストをここに含めます
+</summary>
+</member>
+</members>
+</doc>
