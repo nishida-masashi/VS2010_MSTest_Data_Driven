@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Root>
+	<variable_list>
+		<id>1</id>
+		<err>false</err>
+		<input>2</input>
+		<output>4</output>
+	</variable_list>
+	<variable_list>
+		<id>2</id>
+		<err>true</err>
+		<input>-1</input>
+		<output/>
+	</variable_list>
+	<variable_list>
+		<id>3</id>
+		<err>false</err>
+		<input>-2</input>
+		<output>3</output>
+	</variable_list>
+	<variable_list>
+		<id>4</id>
+		<err>false</err>
+		<input>255</input>
+		<output>500</output>
+	</variable_list>
+	<variable_list>
+		<id>5</id>
+		<err>true</err>
+		<input>2</input>
+		<output>4</output>
+	</variable_list>
+</Root>

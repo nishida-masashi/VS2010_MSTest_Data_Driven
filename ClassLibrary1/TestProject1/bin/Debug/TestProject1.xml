@@ -11,11 +11,19 @@ TestProject1
 現在のテストの実行についての情報および機能を
 提供するテスト コンテキストを取得または設定します。
 </summary>
-</member><member name="M:TestProject1.Class1Test.NG_DoubleValueTest">
+</member><member name="M:TestProject1.Class1Test.NG_CSV_DoubleValueTest">
 	<summary>
 DoubleValue のテスト
 </summary>
-</member><member name="M:TestProject1.Class1Test.OK_DoubleValueTest">
+</member><member name="M:TestProject1.Class1Test.OK_CSV_DoubleValueTest">
+	<summary>
+DoubleValue のテスト
+</summary>
+</member><member name="M:TestProject1.Class1Test.NG_XML_DoubleValueTest">
+	<summary>
+DoubleValue のテスト
+</summary>
+</member><member name="M:TestProject1.Class1Test.OK_XML_DoubleValueTest">
 	<summary>
 DoubleValue のテスト
 </summary>

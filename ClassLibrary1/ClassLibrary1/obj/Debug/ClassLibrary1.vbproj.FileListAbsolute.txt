@@ -6,3 +6,11 @@ C:\Users\nishida.masashi\Desktop\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibr
 C:\Users\nishida.masashi\Desktop\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\nishida.masashi\Desktop\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.xml
 C:\Users\nishida.masashi\Desktop\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.xml
+C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.Resources.resources
+C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.vbproj.GenerateResource.Cache
+C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.xml
+C:\Users\nishida.masashi\Desktop\VS2010_MSTest_Data_Driven-master\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

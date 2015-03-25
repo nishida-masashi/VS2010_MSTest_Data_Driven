@@ -53,7 +53,9 @@ Public Class Class1Test
     '
 #End Region
 
-    Private Sub Sub_DoubleValueTest()
+#Region "CSV"
+
+    Private Sub CSV_DoubleValueTest()
         Dim input
         Dim output
         Dim err_flg As Boolean
@@ -84,16 +86,66 @@ Public Class Class1Test
     '''DoubleValue のテスト
     '''</summary>
     <DeploymentItem("TestProject1\CSVData.csv")> <DeploymentItem("TestProject1\NG_CSVData.csv")> <Description("テストが失敗するデータを使用しています")> <DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\NG_CSVData.csv", "NG_CSVData#csv", DataAccessMethod.Sequential)> <TestMethod()> _
-    Public Sub NG_DoubleValueTest()
-        Sub_DoubleValueTest()
+    Public Sub NG_CSV_DoubleValueTest()
+        CSV_DoubleValueTest()
     End Sub
 
     '''<summary>
     '''DoubleValue のテスト
     '''</summary>
     <Description("テストが成功するデータ")> <DeploymentItem("TestProject1\CSVData.csv")> <DeploymentItem("TestProject1\OK_CSVData.csv")> <DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\OK_CSVData.csv", "OK_CSVData#csv", DataAccessMethod.Sequential)> <TestMethod()> _
-    Public Sub OK_DoubleValueTest()
-        Sub_DoubleValueTest
+    Public Sub OK_CSV_DoubleValueTest()
+        CSV_DoubleValueTest()
     End Sub
+
+#End Region
+
+#Region "XML"
+
+    Private Sub XML_DoubleValueTest()
+        Dim input
+        Dim output
+        Dim err_flg As Boolean
+
+        Try
+            input = TestContext.DataRow("input")
+            output = TestContext.DataRow("output")
+        Catch
+            err_flg = True
+        End Try
+
+        If String.Equals(TestContext.DataRow("err"), "true") Then
+            Try
+                Assert.AreEqual(Of Byte)(ClassLibrary1.Class1.DoubleValue(input), output)
+            Catch
+                err_flg = True
+            End Try
+
+            If err_flg = False Then
+                Assert.Fail()
+            End If
+        Else
+            Assert.AreEqual(Of Byte)(ClassLibrary1.Class1.DoubleValue(input), output)
+        End If
+    End Sub
+
+    '''<summary>
+    '''DoubleValue のテスト
+    '''</summary>
+    <DeploymentItem("TestProject1\NG_XMLData.xml")> <DeploymentItem("TestProject1\CSVData.csv")> <DeploymentItem("TestProject1\NG_CSVData.csv")> <Description("テストが失敗するデータを使用しています")> <DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\NG_XMLData.xml", "variable_list", DataAccessMethod.Sequential)> <TestMethod()> _
+    Public Sub NG_XML_DoubleValueTest()
+        XML_DoubleValueTest()
+    End Sub
+
+    '''<summary>
+    '''DoubleValue のテスト
+    '''</summary>
+    <DeploymentItem("TestProject1\OK_XMLData.xml")> <Description("テストが成功するデータ")> <DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\OK_XMLData.xml", "variable_list", DataAccessMethod.Sequential)> <TestMethod()> _
+    Public Sub OK_XML_DoubleValueTest()
+        XML_DoubleValueTest()
+    End Sub
+
+#End Region
+
 
 End Class

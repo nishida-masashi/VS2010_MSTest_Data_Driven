@@ -55,6 +55,7 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
@@ -85,8 +86,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="defData.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="NG_CSVData.csv" />
     <None Include="OK_CSVData.csv" />
+    <None Include="XML_データ入力.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NG_XMLData.xml" />
+    <Content Include="OK_XMLData.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
